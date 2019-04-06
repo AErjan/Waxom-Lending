@@ -1,0 +1,14 @@
+mixin main-nav-list(title)
+  li.main-nav__item
+    a(href='#').main-nav__link=title
+
+nav.main-nav.page-header__nav
+  ul.main-nav__list
+    +main-nav-list('Home')
+    +main-nav-list('About Us')
+    +main-nav-list('Portfolio')
+    +main-nav-list('Features')
+    +main-nav-list('Blog')
+    +main-nav-list('Pricing')
+    +main-nav-list('Shortcodes')
+    +main-nav-list('Contact')

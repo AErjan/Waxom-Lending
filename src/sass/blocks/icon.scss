@@ -1,0 +1,35 @@
+.icon {
+  @media (max-width: 500px) {
+    display: none;
+  }
+
+  &__cart {
+    margin-right: 28px;
+    cursor: pointer;
+    fill: #fff;
+
+    path {
+      transition: fill 0.3s ease-in-out;
+    }
+
+    &:hover {
+      path {
+        fill: #c7b299;
+      }
+    }
+  }
+  &__search {
+    cursor: pointer;
+    fill: #fff;
+
+    path {
+      transition: fill 0.3s ease-in-out;
+    }
+
+    &:hover {
+      path {
+        fill: #c7b299;
+      }
+    }
+  }
+}

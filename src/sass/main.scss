@@ -1,0 +1,21 @@
+@import '../../node_modules/normalize.scss/normalize';
+@import '../../node_modules/owl.carousel/src/scss/owl.carousel.scss';
+@import '../../node_modules/owl.carousel/src/scss/owl.theme.default.scss';
+
+@import 'global/vars';
+@import 'global/fonts';
+@import 'global/base';
+
+@import 'sections/header';
+@import 'sections/main-slider';
+@import 'sections/services';
+@import 'sections/theme';
+@import 'sections/projects';
+@import 'sections/video';
+@import 'sections/devices';
+@import 'sections/clients';
+@import 'sections/posts';
+@import 'sections/partners';
+@import 'sections/footer';
+
+@import 'blocks/button';

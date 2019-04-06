@@ -1,0 +1,50 @@
+.main-nav {
+  &__list {
+    display: flex;
+
+    @media (max-width: 1150px) {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      flex-direction: column;
+      background-color: rgba(#000, 0.8);
+      padding: 30px 60px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &-show {
+      opacity: 1;
+    }
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: 1150px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #c7b299;
+    }
+
+    @media (max-width: 1150px) {
+      font-size: 18px;
+    }
+  }
+}

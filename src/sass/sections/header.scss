@@ -1,0 +1,80 @@
+@import '../blocks/logo';
+@import '../blocks/navigation';
+@import '../blocks/icon';
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  z-index: 2;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    margin-right: 63px;
+  }
+}
+
+.main-nav-burger {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  width: 32px;
+  height: 27px;
+  position: relative;
+  display: none;
+  margin-left: 28px;
+
+  @media (max-width: 1150px) {
+    display: block;
+  }
+
+  @media (max-width: 500px) {
+    margin-left: 0;
+  }
+
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__line-top {
+    transform: translateY(-12px);
+  }
+
+  &__line-bottom {
+    transform: translateY(9px);
+  }
+}
+
+.main-nav-burger-active {
+  .main-nav-burger__line-top {
+    transform: rotate(45deg);
+  }
+
+  .main-nav-burger__line-middle {
+    display: none;
+  }
+
+  .main-nav-burger__line-bottom {
+    transform: rotate(-45deg);
+  }
+}
